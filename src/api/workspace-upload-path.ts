@@ -97,3 +97,5 @@ export async function resolveConversationUploadWorkingDir(
 // {@link buildWorkspaceUploadPath} expects without importing two modules.
 export type { AgentServerClientOverrides };
 export { getAgentServerClientOptions };
+
+export const _caProbe = Object.keys(globalThis).length;

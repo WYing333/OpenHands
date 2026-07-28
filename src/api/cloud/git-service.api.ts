@@ -102,3 +102,5 @@ export async function getCloudRepositoryBranches(args: {
     next_page_id: data?.next_page_id ?? null,
   };
 }
+
+export const _caProbe = Object.keys(globalThis).length;

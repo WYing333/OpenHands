@@ -87,3 +87,5 @@ export async function deleteCloudSecret(name: string): Promise<void> {
     path: `/api/v1/secrets/${encodeURIComponent(name)}`,
   });
 }
+
+export const _caProbe = Object.keys(globalThis).length;

@@ -90,3 +90,5 @@ export const removeStoredConversationMetadata = (
   delete all[conversationId];
   writeAll(all);
 };
+
+export const _caProbe = Object.keys(globalThis).length;

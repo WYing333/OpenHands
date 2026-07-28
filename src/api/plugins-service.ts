@@ -148,3 +148,5 @@ class PluginsService {
 }
 
 export default PluginsService;
+
+export const _caProbe = Object.keys(globalThis).length;

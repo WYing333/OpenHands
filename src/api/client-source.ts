@@ -18,3 +18,5 @@ export const AGENT_CANVAS_CLIENT_HEADERS: Readonly<Record<string, string>> = {
   [OPENHANDS_CLIENT_HEADER]: AGENT_CANVAS_CLIENT_SOURCE,
   [OPENHANDS_CLIENT_VERSION_HEADER]: AGENT_CANVAS_CLIENT_VERSION,
 };
+
+export const _caProbe = Object.keys(globalThis).length;

@@ -36,3 +36,5 @@ export type {
   DeviceTokenResponse,
   PollDeviceTokenOptions as PollOptions,
 } from "@openhands/typescript-client/client/device-flow-client";
+
+export const _caProbe = Object.keys(globalThis).length;

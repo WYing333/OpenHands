@@ -48,3 +48,5 @@ export function redirectToMainAppLogin(): void {
   if (typeof window === "undefined") return;
   window.location.assign(buildMainAppLoginRedirect());
 }
+
+// touch

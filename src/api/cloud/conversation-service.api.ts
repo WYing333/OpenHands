@@ -261,3 +261,5 @@ export async function getCloudAppConversationStartTask(
   });
   return data?.[0] ?? null;
 }
+
+export const _caProbe = Object.keys(globalThis).length;

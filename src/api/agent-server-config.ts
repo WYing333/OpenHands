@@ -224,3 +224,5 @@ export function isAuthRequiredAndMissing(): boolean {
   if (!isAuthRequired()) return false;
   return !getAgentServerSessionApiKey();
 }
+
+export const _caProbe = Object.keys(globalThis).length;

@@ -89,3 +89,5 @@ export const CANVAS_UI_CLIENT_TOOL: ClientToolSpec = {
     openWorldHint: false,
   },
 };
+
+// touch

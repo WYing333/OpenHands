@@ -96,3 +96,5 @@ export async function activateCloudAgentProfile(
     body: {},
   });
 }
+
+export const _caProbe = Object.keys(globalThis).length;

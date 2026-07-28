@@ -64,3 +64,5 @@ class SkillsService {
 }
 
 export default SkillsService;
+
+export const _caProbe = Object.keys(globalThis).length;

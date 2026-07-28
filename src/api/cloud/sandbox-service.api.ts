@@ -37,3 +37,5 @@ export async function batchGetCloudSandboxes(
   });
   return data ?? [];
 }
+
+export const _caProbe = Object.keys(globalThis).length;

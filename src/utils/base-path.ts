@@ -5,7 +5,8 @@ function normalizeBasePath(value?: string | null): string {
   if (!raw || raw === "/") return "";
 
   const withLeadingSlash = raw.startsWith("/") ? raw : `/${raw}`;
-  return withLeadingSlash.replace(/\/+$/, "");
+  const withoutTrailingSlashes = withLeadingSlash.replace(/\/+$/, "");
+  return withoutTrailingSlashes;
 }
 
 export function getAgentCanvasBasePath(): string {

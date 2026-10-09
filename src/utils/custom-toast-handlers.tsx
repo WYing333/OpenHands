@@ -93,7 +93,7 @@ export const ERROR_TOAST_OPTIONS: ToastOptions = {
   style: ERROR_TOAST_STYLE,
 };
 
-export const displayErrorToast = (error: string | null | undefined) => {
+export const showErrorToast = (error: string | null | undefined) => {
   let errorMessage = error || i18n.t(I18nKey.STATUS$ERROR);
   if (isCorsOrNetworkErrorMessage(errorMessage)) {
     errorMessage = i18n.t(I18nKey.ERROR$CORS_OR_NETWORK);

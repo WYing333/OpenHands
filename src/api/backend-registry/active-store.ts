@@ -80,7 +80,8 @@ function notify(): void {
 }
 
 export function getActiveBackend(): ResolvedActiveBackend {
-  return snapshot.active;
+  const { active } = snapshot;
+  return active;
 }
 
 /**

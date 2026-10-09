@@ -1,3 +1,4 @@
+import { AvailableLanguages } from "#/i18n";
 import { Settings } from "#/types/settings";
 
 export const LATEST_SETTINGS_VERSION = 5;
@@ -66,3 +67,9 @@ export const DEFAULT_SETTINGS: Settings = {
  * Get the default settings
  */
 export const getDefaultSettings = (): Settings => DEFAULT_SETTINGS;
+
+/**
+ * Whether a stored `language` setting is one the UI can actually display.
+ */
+export const isSupportedSettingsLanguage = (language: string): boolean =>
+  AvailableLanguages.some((entry) => entry.value === language);

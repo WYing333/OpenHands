@@ -17,8 +17,12 @@ function isAxiosError(error: unknown): error is AxiosError {
 /**
  * Retrieve the error message from an Axios error
  * @param error The error to render a toast for
+ * @param fallback Message to return when nothing usable can be extracted
  */
-export const retrieveAxiosErrorMessage = (error: unknown): string => {
+export const retrieveAxiosErrorMessage = (
+  error: unknown,
+  fallback: string,
+): string => {
   let errorMessage: string | null = null;
   let shouldPreferExtractedMessage = false;
 
@@ -45,5 +49,5 @@ export const retrieveAxiosErrorMessage = (error: unknown): string => {
   const userFacingMessage = getUserFacingConnectionErrorMessage(
     shouldPreferExtractedMessage ? (errorMessage ?? error) : error,
   );
-  return userFacingMessage ?? errorMessage ?? "";
+  return userFacingMessage ?? errorMessage ?? fallback;
 };
